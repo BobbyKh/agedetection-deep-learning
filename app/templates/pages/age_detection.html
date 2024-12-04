@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+
+
+{% block content %}
+
+<div>
+    <h1 class="text-2xl font-bold mb-4 text-center">Age Detection</h1>
+<img src="{{ image.url }}" alt="">
+{% if age %}
+<p class="text-center">Predicted age: {{ age }}</p>
+{% endif %}
+
+</div>
+
+{% endblock content %}
